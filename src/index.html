@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<body class="page">
+    <header class="header">
+      <a class="logo" href="#"></a>
+    </header>
+
+    <main class="content">
+
+      <section class="gallery content__section">
+        <h1 class="gallery__heading">Усы, лапы, хвост</h1>
+        <ul class="gallery__list">
+          <template id="item">
+            <li class="item">
+              <img class="item__img" src="" alt="">
+              <div class="item__overlay">
+                <p class="item__name"></p>
+              </div>
+            </li>
+          </template>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">2021&copy; Александра Бабичева</p>
+    </footer>
+
+    <div class="popup">
+      <button type="button" class="popup__close-btn"></button>
+      <div class="popup__container">
+        <img class="popup__img" src="" alt="">
+        <div class="popup__about">
+          <h2 class="popup__title"></h2>
+          <div class="popup__rate">
+            <p class="popup__count"></p>
+            <button type="button" class="popup__like-btn"></button>
+          </div>
+        </div>
+        <form class="popup__form">
+          <h3 class="popup__head">Оставьте комменатарий</h3>
+          <textarea class="popup__input"></textarea>
+          <button type="submit" class="popup__sbmt-btn">Отправить</button>
+        </form>
+        <div class="popup__comments">
+          <h3 class="popup__heading">Комментарии</h3>
+          <template id="comment">
+            <div class="popup__comment">
+              <p class="popup__text"></p>
+              <p class="popup__date"></p>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
